@@ -25,10 +25,11 @@ function findByName(names, user) {
         // console.log(currentUser.name);
         if (currentUser.name === user) {
             return currentUser;
+
         }
     }
 
-
+    return null;
 }
 
 
@@ -49,6 +50,22 @@ test("findByName will return an object from an array with a specified name", () 
 
     expect(result).toEqual({name: "Klaas", id: 2});
 
+})
 
+test("findByName returns null if a user is not found", () => {
 
+    //Arrange
+    const usernames = [
+        {name: "Piet", id: 1},
+        {name: "Klaas", id: 2},
+        {name: "Henk", id: 3},
+    ];
+
+    const userToFind = "Beppie";
+
+    // Act
+    const result = findByName(usernames, userToFind);
+
+    // Assert
+    expect(result).toBeNull();
 })

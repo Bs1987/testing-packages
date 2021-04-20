@@ -9,7 +9,7 @@
     - Arrange (klaarzetten)
     - Act (handelen)
     - Assert (beweren)
-[] Je weet hoe je de Jest "expect" functie gebruikt.
+[X] Je weet hoe je de Jest "expect" functie gebruikt.
 
 [] Je weet hoe je de code loskoppelt van de tests.
 
