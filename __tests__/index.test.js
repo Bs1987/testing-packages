@@ -1,3 +1,54 @@
-test("Controleer of de test wel werkt", () => {
-    console.log("Ik word uitgevoerd");
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+test("The add function adds two numbers and returns the sum", () => {
+
+    // Arrange
+    const number1 = 5;
+    const number2 = 10;
+
+    // Act
+    const sum = add(number1, number2);
+
+    // Assert
+    expect(sum).toBe(15);
+})
+
+function findByName(names, user) {
+    // 1. Itereer over de array heen met een for-loop
+    // 2. Vergelijk iedere entry met de user die we moeten vinden
+    // 3. Als de name overeen komen moet het hele object teruggegeven worden
+    console.log(names)
+    for (let i = 0; i < names.length; i++) {
+        const currentUser = names[i];
+        // console.log(currentUser.name);
+        if (currentUser.name === user) {
+            return currentUser;
+        }
+    }
+
+
+}
+
+
+test("findByName will return an object from an array with a specified name", () => {
+
+    //Arrange
+    const usernames = [
+        {name: "Piet", id: 1},
+        {name: "Klaas", id: 2},
+        {name: "Henk", id: 3},
+    ];
+
+    const userToFind = "Klaas";
+
+    //Act
+    const result = findByName(usernames, userToFind);
+    //Assert
+
+    expect(result).toEqual({name: "Klaas", id: 2});
+
+
+
 })
