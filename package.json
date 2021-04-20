@@ -1,0 +1,26 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "First try at packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bs1987/testing-packages.git"
+  },
+  "keywords": [
+    "Test",
+    "package"
+  ],
+  "author": "Boy SAx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bs1987/testing-packages/issues"
+  },
+  "homepage": "https://github.com/Bs1987/testing-packages#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
