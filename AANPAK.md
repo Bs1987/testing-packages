@@ -11,7 +11,7 @@
     - Assert (beweren)
 [X] Je weet hoe je de Jest "expect" functie gebruikt.
 
-[] Je weet hoe je de code loskoppelt van de tests.
+[X] Je weet hoe je de code loskoppelt van de tests.
 
 ## Stappenplan
 
@@ -24,5 +24,10 @@
     7. Test altijd eerst even of dit werkt met een "console.log" en voer het test commando uit: "npm run test"
     8. ARRANGE: Zet de waardes klaar waar je mee gaat testen
     9. ACT: Voer de functie uit en geef de gecontroleerde waardes daaran mee
-    10. ASSERT: Maak een bewering over de verwachtte uitkomst en vergelijk dit met de daadwerkelijke uitkomst
+    10. ASSERT: Maak een bewering over de verwachtte uitkomst en vergelijk dit met de daadwerkelijke uitkomst doormiddel van "expect" functie, met daaraan de beweringsfunctie gekoppeld zoals "toEqual"
+    11. Maak een apart bestand met de gewone ".js" extentie (zoals "index.js")
+    12. Plak de functies daarin en haal ze weg uit het test-bestand
+    13. Exporteer de functies met "module.exports = {naam: functieNaam }"
+    14. Importeer de functie met de "require"-functie die wijst naar het pad waar de functies in staan ("const add = require(("../index.js.").add)
+    15. BONUS: Schrijf het netter op door destructuring te gebruiken: "const { add } = require("../index.js"))"
 

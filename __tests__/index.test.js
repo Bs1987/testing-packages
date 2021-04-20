@@ -1,6 +1,4 @@
-function add(num1, num2) {
-    return num1 + num2;
-}
+const { add, findByName } = require("../index");
 
 test("The add function adds two numbers and returns the sum", () => {
 
@@ -15,22 +13,7 @@ test("The add function adds two numbers and returns the sum", () => {
     expect(sum).toBe(15);
 })
 
-function findByName(names, user) {
-    // 1. Itereer over de array heen met een for-loop
-    // 2. Vergelijk iedere entry met de user die we moeten vinden
-    // 3. Als de name overeen komen moet het hele object teruggegeven worden
-    console.log(names)
-    for (let i = 0; i < names.length; i++) {
-        const currentUser = names[i];
-        // console.log(currentUser.name);
-        if (currentUser.name === user) {
-            return currentUser;
 
-        }
-    }
-
-    return null;
-}
 
 
 test("findByName will return an object from an array with a specified name", () => {
