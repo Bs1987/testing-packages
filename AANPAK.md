@@ -15,5 +15,6 @@
 
 ## Stappenplan
 
-
+    1. Maak een package.json aan door npm te initialiseren ("npm init")
+    2. 
 
