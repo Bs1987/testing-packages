@@ -16,5 +16,7 @@
 ## Stappenplan
 
     1. Maak een package.json aan door npm te initialiseren ("npm init")
-    2. 
+    2. Installeer Jest met het commando "npm install jest --save-dev"
+    3. Voeg de node_modules toe aan de .gitignore file
+    4. 
 
