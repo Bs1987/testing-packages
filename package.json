@@ -4,7 +4,8 @@
   "description": "First try at packages",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest",
+    "test:watch": "npx jest --watch"
   },
   "repository": {
     "type": "git",
